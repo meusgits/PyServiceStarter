@@ -39,6 +39,8 @@ def teste_se_esta_on(nome):
 
 
 while True:
+    
+    
     for s in services.Win32_Service(Name=servico, State="Stopped"):
         nome = s.DisplayName
         print(f'Luciano o {nome} parou em {servidor}.')
@@ -51,4 +53,5 @@ while True:
     for s in services.Win32_Service(Name=servico, State="Running"):
         nome = s.DisplayName
         print(f'Luciano o {nome} em {servidor} está iniciado!')
+        
 
